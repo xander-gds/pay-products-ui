@@ -149,7 +149,7 @@ describe('adhoc payment submit-amount controller', function () {
       })
 
       it('should add a relevant error message to the session \'flash\'', () => {
-        expect($('.govuk-heading-m').text()).to.include(`Choose an amount under £100,000`)
+        expect($('.govuk-heading-m').text()).to.include(`Amount must be £100,000 or less`)
       })
     })
   })
